@@ -36,7 +36,7 @@ def create_savings_account(balance, interest_rate, months):
     savings_account.set_interest(interest)
 
     # Return the updated balance and interest earned.
-    return  f"Updated balance: {savings_account.balance: .2f}, Interest earned: {savings_account.interest: .2f}"
+    return  savings_account.balance, savings_account.interest
 
 # Test the function
 if __name__ == "__main__":
