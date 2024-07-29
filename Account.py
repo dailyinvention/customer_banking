@@ -22,4 +22,4 @@ class Account:
 
     def update_balance_with_interest(self, interest):
         """Update the account balance with interest"""
-        self.balance += interest
+        return self.balance + interest

@@ -22,14 +22,14 @@ def create_savings_account(balance, interest_rate, months):
 
     # Calculate interest earned
      # ADD YOUR CODE HERE
-    interest = calculate_earned_interest(months, interest_rate)
+    interest = savings_account.calculate_earned_interest(months, interest_rate)
 
     # Update the savings account balance by adding the interest earned
     # ADD YOUR CODE HERE
-    updated_balance = update_balance_with_interest(interest)
+    updated_balance = savings_account.update_balance_with_interest(interest)
     # Pass the updated_balance to the set balance method using the instance of the SavingsAccount class.
     # ADD YOUR CODE HERE
-    saving_account.set_balance(updated_balance)
+    savings_account.set_balance(updated_balance)
 
     # Pass the interest_earned to the set interest method using the instance of the SavingsAccount class.
     # ADD YOUR CODE HERE
