@@ -16,10 +16,12 @@ class Account:
         """Sets the interest gained for the the account"""
         self.interest = interest
     
+    # Calculates the interest earned for the account balance
     def calculate_earned_interest(self, months, interest_rate):
         """Calculate the interest earned for the account"""
         return self.balance * (interest_rate/100 * months/12)
 
+    # Updates the account balance with interest
     def update_balance_with_interest(self, interest):
         """Update the account balance with interest"""
         return self.balance + interest
