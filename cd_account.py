@@ -36,4 +36,11 @@ def create_cd_account(balance, interest_rate, months):
     cd_account.set_interest(interest)
 
     # Return the updated balance and interest earned.
-    return  # ADD YOUR CODE HERE
+    return  f"Updated balance: {cd_account.balance: .2f}, Interest earned: {cd_account.interest: .2f}"
+
+# Test the function
+if __name__ == "__main__":
+    print(create_cd_account(1000, 5, 12))  # Expected output: Updated balance: 1050.0, Interest earned: 50.0
+    print(create_cd_account(2000, 3, 6))  # Expected output: Updated balance: 2030.0, Interest earned: 30.0
+    print(create_cd_account(5000, 8, 24))  # Expected output: Updated balance: 5400.0, Interest earned: 400.0
+    print(create_cd_account(10000, 10, 36))  # Expected output: Updated balance: 13000.0, Interest earned: 3000.0
